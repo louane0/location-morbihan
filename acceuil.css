@@ -1,0 +1,205 @@
+﻿/* Réinitialisation des styles et paramètres globaux */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Hauteur de la fenêtre visible */
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    align-items: center; /* Centrer horizontalement */
+    background-color: #f0f0f0; /* Couleur de fond */
+    background-image: url('ecran.jpeg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+    background-size: cover; /* Pour couvrir toute la surface du body */
+    background-position: center; /* Pour centrer l'image */
+}
+
+
+/* Styles pour le titre */
+.titre {
+    font-family: Chalkduster;/* Police de caractères */
+    margin-top: 10px; /* Espacement par rapport au haut de la page */
+    padding: 10px 20px;
+    border: 2px solid black; /* Bordure */
+    border-radius: 15px; /* Coins arrondis */
+    background-color: white; /* Couleur de fond */
+    text-align: center; /* Centrer le texte horizontalement */
+    width: fit-content; /* Adapter la largeur au contenu */
+    margin-left: auto; /* Aligner le bloc à droite */
+    margin-right: auto; /* Aligner le bloc à gauche */
+}
+
+.menu {
+    margin-top: 30px; /* Ajouter une marge en haut du menu */
+    text-align: center; /* Centrer les éléments horizontalement */
+}
+
+.menu ul {
+    list-style: none; /* Pour supprimer les puces de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block; /* Pour afficher les éléments de la liste sur une ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+.menu a {
+    text-decoration: none; /* Pour supprimer le soulignement des liens */
+    padding: 10px 20px; /* Ajouter de l'espace à l'intérieur des liens */
+    border: 2px solid blue; /* Bordure autour des liens */
+    border-radius: 25px; /* Coins arrondis */
+    color: #000; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+
+.menu a:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+
+
+/* Styles pour le contenu principal */
+p {
+    text-align: center; /* Centrer le texte */
+    margin-top: 40px; /* Ajouter un espace en haut du paragraphe */
+}
+
+p .activities{
+    text-align: right; /* Centrer le texte */
+}
+
+/* Styles pour les images */
+.image-container {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrer horizontalement les éléments enfants */
+}
+
+/* Styles pour les images */
+.image-container img {
+    margin: 10px; /* Ajout d'un espacement horizontal entre les images */
+    width: 350px; /* Réduire la largeur des images à 150 pixels */
+    height: auto; /* Pour conserver le ratio d'aspect */
+}
+
+/* Styles pour les listes */
+.activities, .events, .resources, .mer {
+    margin-top: 20px; /* Espacement par rapport au contenu précédent */
+    width: 80%; /* Largeur du conteneur */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+}
+
+/* Styles pour les paragraphes */
+.activities p, .events p, .resources p, .mer p {
+    text-align: justify; /* Justifier le texte */
+}
+
+/* Styles pour les listes non ordonnées */
+.activities ul, .events ul, .resources ul {
+    list-style-type: disc; /* Utilisation de ronds comme marqueurs */
+    padding-left: 20px; /* Ajout d'un espacement à gauche pour les marqueurs */
+}
+
+/* Styles pour chaque élément de la liste */
+.activities li, .events li, .resources li {
+    padding-left: 10px; /* Réduction de l'espacement entre le marqueur et le texte */
+}
+
+/* Style pour l'image */
+img {
+    width: 600px; /* Largeur de l'image */
+    height: auto; /* Pour conserver le ratio d'aspect */
+    display: block; /* Pour aligner l'image au centre */
+    margin-left: auto; /* Marges automatiques à gauche et à droite */
+    margin-right: auto;
+    margin-bottom: 100px; /* Ajout d'une marge en bas pour l'espace */
+    max-height: 500px; /* Hauteur maximale de l'image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Hauteur de la fenêtre visible */
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    align-items: center; /* Centrer horizontalement */
+    background-color: #f0f0f0; /* Couleur de fond */
+    background-image: url('ecran.jpeg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+    background-size: cover; /* Pour couvrir toute la surface du body */
+    background-position: center; /* Pour centrer l'image */
+}
+
+
+/* Styles pour le contenu principal */
+p {
+    text-align: center; /* Centrer le texte */
+    margin-top: 40px; /* Ajouter un espace en haut du paragraphe */
+}
+
+
+
+/* Styles pour le titre */
+.titre {
+    margin-top: 10px; /* Espacement par rapport au haut de la page */
+    padding: 10px 20px;
+    border: 2px solid black; /* Bordure */
+    border-radius: 15px; /* Coins arrondis */
+    background-color: white; /* Couleur de fond */
+    text-align: center; /* Centrer le texte horizontalement */
+    width: fit-content; /* Adapter la largeur au contenu */
+    margin-left: auto; /* Aligner le bloc à droite */
+    margin-right: auto; /* Aligner le bloc à gauche */
+}
+
+.menu {
+    margin-top: 30px; /* Ajouter une marge en haut du menu */
+    text-align: center; /* Centrer les éléments horizontalement */
+}
+
+.menu ul {
+    list-style: none; /* Pour supprimer les puces de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block; /* Pour afficher les éléments de la liste sur une ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+.menu a {
+    text-decoration: none; /* Pour supprimer le soulignement des liens */
+    padding: 10px 20px; /* Ajouter de l'espace à l'intérieur des liens */
+    border: 2px solid blue; /* Bordure autour des liens */
+    border-radius: 25px; /* Coins arrondis */
+    color: #000; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+
+.menu a:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+

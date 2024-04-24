@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*height: 100vh; /* Hauteur de la fenêtre visible */
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    align-items: center; /* Centrer horizontalement */
+    background-color: #f0f0f0; /* Couleur de fond */
+    background-image: url('ecran2.jpeg');
+    background-size: cover; /* Pour couvrir toute la surface du body */
+    background-position: center; /* Pour centrer l'image */
+}
+
+/* Styles pour le titre */
+.titre {
+    font-family: Chalkduster;/* Police de caractères */
+    margin-top: 10px; /* Espacement par rapport au haut de la page */
+    padding: 10px 20px;
+    border: 2px solid black; /* Bordure */
+    border-radius: 15px; /* Coins arrondis */
+    background-color: white; /* Couleur de fond */
+    text-align: center; /* Centrer le texte horizontalement */
+    width: fit-content; /* Adapter la largeur au contenu */
+    margin-left: auto; /* Aligner le bloc à droite */
+    margin-right: auto; /* Aligner le bloc à gauche */
+}
+
+
+.architecture, .amenagement-cuisine, .amenagement-salon, .amenagement-chambre, .amenagement-jeu, .amenagement-arcuisine, .exterieur, .emplacement {
+    font-family: cursive, sans-serif; /* Police de caractères */
+    margin: 20px auto; /* Marge autour du conteneur avec une marge automatique sur les côtés pour centrer horizontalement */
+    padding: 20px; /* Espacement interne */
+    background-color: #f0f0f0; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    width: 80%; /* Largeur de 80% de la largeur de la fenêtre */
+    max-width: 800px; /* Largeur maximale de 800 pixels pour une taille adaptative */
+    height: auto; /* Hauteur automatique basée sur le contenu */
+}
+
+.architecture, .amenagement-cuisine, .amenagement-salon, .amenagement-chambre, .amenagement-jeu, .amenagement-arcuisine, .exterieur, .emplacement h2 {
+    color: #333; /* Couleur du titre */
+    text-align: center; /* Alignement du texte */
+}
+
+.architecture, .amenagement-cuisine, .amenagement-salon, .amenagement-chambre, .amenagement-jeu, .amenagement-arcuisine, .exterieur, .emplacement li {
+    font-size: 16px; /* Taille de la police ajustée à 16 pixels */
+    line-height: 1.6; /* Hauteur de ligne */
+    margin-bottom: 10px; /* Marge en bas pour les éléments de la liste */
+}
+
+/* Suppression de cette ligne pour rétablir les puces */
+/*.description ul {
+    list-style-type: none; /* Suppression des puces */
+
+
+
+p {
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espace intérieur */
+    background: linear-gradient(45deg, #FFB6C1, #87CEEB); /* Dégradé de couleurs */
+    border-radius: 20px; /* Coins arrondis */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Ombre */
+    margin-bottom: 30px; /* Marge en bas */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition sur la transformation et la couleur de fond */
+  }
+  
+  /* Effet au survol */
+  p:hover {
+    background: linear-gradient(45deg, #FFB6C1, #87CEEB); /* Dégradé de couleurs */
+    transform: scale(1.05); /* Agrandissement au survol */
+  }
+  
+  /* Effet de changement de couleur alternatif */
+  @keyframes changeColor {
+    0% { background-color: #FFB6C1; }
+    50% { background-color: #87CEEB; }
+    100% { background-color: #FFB6C1; }
+  }
+  
+  /* Animation de changement de couleur */
+  p:focus {
+    animation: changeColor 2s infinite; /* Animation infinie de changement de couleur */
+  }
+  
+  
+
+  .trait img {
+    width: 300px; /* Largeur spécifique en pixels */
+    height: auto; /* Pour conserver le ratio d'aspect */
+    
+}
+
+
+.menu {
+    margin-top: 30px; /* Ajouter une marge en haut du menu */
+    text-align: center; /* Centrer les éléments horizontalement */
+    margin-bottom: 50px;
+}
+
+.menu ul {
+    list-style: none; /* Pour supprimer les puces de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block; /* Pour afficher les éléments de la liste sur une ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+.menu a {
+    text-decoration: none; /* Pour supprimer le soulignement des liens */
+    padding: 10px 20px; /* Ajouter de l'espace à l'intérieur des liens */
+    border: 2px solid blue; /* Bordure autour des liens */
+    border-radius: 25px; /* Coins arrondis */
+    color: #000; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+
+.menu a:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+}
+
+
+
+
+.presentationmaison-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+
+.presentationmaison {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 80%; /* Largeur du carrousel */
+    margin: 0 auto; /* Centre le carrousel */
+    
+    
+
+}
+
+.presentationmaison img-container {
+    width: 200px; /* Largeur fixe pour tous les conteneurs d'images */
+    height: 150px; /* Hauteur fixe pour tous les conteneurs d'images */
+    overflow: hidden; /* Masquer le débordement pour éviter les déformations */
+    display: flex; 
+    
+}
+
+.presentationmaison img {
+    width: 110%; /* Les images remplissent la largeur du conteneur */
+    height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions */
+    margin-right: 20%; 
+    margin-left: 20%;
+    
+    
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+.chambre-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+
+.chambre{
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 80%; /* Largeur du carrousel */
+    margin: 0 auto; /* Centre le carrousel */
+    
+    
+
+}
+
+.chambre img-container {
+    width: 200px; /* Largeur fixe pour tous les conteneurs d'images */
+    height: 150px; /* Hauteur fixe pour tous les conteneurs d'images */
+    overflow: hidden; /* Masquer le débordement pour éviter les déformations */
+    display: flex; 
+    
+}
+
+.chambre img {
+    width: 110%; /* Les images remplissent la largeur du conteneur */
+    height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions */
+    margin-right: 20%; 
+    margin-left: 30%;
+    position: relative;
+    vertical-align: middle;
+    
+}
+
+.prec,
+.suiv {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prec {
+    left: 10px;
+}
+
+.suiv {
+    right: 10px;
+}
+
+
+.cuisine img {
+    width: 800px; /* Largeur de l'image */
+    height: auto; /* Pour conserver le ratio d'aspect */
+    display: block; /* Pour aligner l'image au centre */
+    margin-left: auto; /* Marges automatiques à gauche et à droite */
+    margin-right: auto;
+    margin-bottom: 100px; /* Ajout d'une marge en bas pour l'espace */
+    max-height: 500px; /* Hauteur maximale de l'image */
+    border: 4px solid #000; /* Bordure de 2 pixels de large, solide et de couleur noire */
+}
+
+
+
+
+
+
+.arcuisine img {
+    width: 800px; /* Largeur de l'image */
+    height: auto; /* Pour conserver le ratio d'aspect */
+    display: block; /* Pour aligner l'image au centre */
+    margin-left: auto; /* Marges automatiques à gauche et à droite */
+    margin-right: auto;
+    margin-bottom: 100px; /* Ajout d'une marge en bas pour l'espace */
+    max-height: 500px; /* Hauteur maximale de l'image */
+    border: 4px solid #000; /* Bordure de 2 pixels de large, solide et de couleur noire */
+}
+
+
+
+.salon-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.salon {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 80%; /* Largeur du carrousel */
+    margin: 0 auto; /* Centre le carrousel */
+    
+
+}
+
+.salon img-container {
+    width: 200px; /* Largeur fixe pour tous les conteneurs d'images */
+    height: 150px; /* Hauteur fixe pour tous les conteneurs d'images */
+    overflow: hidden; /* Masquer le débordement pour éviter les déformations */
+    display: flex; 
+    
+}
+
+.salon img {
+    width: 110%; /* Les images remplissent la largeur du conteneur */
+    height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions */
+    margin-right: 20%; 
+    margin-left: 20%;
+    
+    
+}
+
+.pi,
+.n {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.p {
+    left: 10px;
+}
+
+.n {
+    right: 10px;
+}
+
+
+
+
+.jeu-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.jeu {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 80%; /* Largeur du carrousel */
+    margin: 0 auto; /* Centre le carrousel */
+    
+
+}
+
+.jeu img-container {
+    width: 200px; /* Largeur fixe pour tous les conteneurs d'images */
+    height: 150px; /* Hauteur fixe pour tous les conteneurs d'images */
+    overflow: hidden; /* Masquer le débordement pour éviter les déformations */
+    display: flex; 
+    
+}
+
+.jeu img {
+    width: 110%; /* Les images remplissent la largeur du conteneur */
+    height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions */
+    margin-right: 20%; 
+    margin-left: 20%;
+    
+}
+
+.pr,
+.ne {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pr {
+    left: 10px;
+}
+
+.ne {
+    right: 10px;
+}
+
+
+.jardin-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+
+.jardin {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 80%; /* Largeur du carrousel */
+    margin: 0 auto; /* Centre le carrousel */
+    
+    
+
+}
+
+.jardin img-container {
+    width: 200px; /* Largeur fixe pour tous les conteneurs d'images */
+    height: 150px; /* Hauteur fixe pour tous les conteneurs d'images */
+    overflow: hidden; /* Masquer le débordement pour éviter les déformations */
+    display: flex; 
+    
+}
+
+.jardin img {
+    width: 110%; /* Les images remplissent la largeur du conteneur */
+    height: auto; /* La hauteur est automatiquement ajustée pour conserver les proportions */
+    margin-right: 20%; 
+    margin-left: 20%;
+    
+    
+}
+
+.pd,
+.nx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pd {
+    left: 10px;
+}
+
+.nx {
+    right: 10px;
+}
+
+
+
